@@ -1,0 +1,117 @@
+.review
+  &__headline
+    @include font_muli(700,26,#393939)
+    +media(600)
+      font-size: 20px
+
+  &__btn
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding-bottom: 10px
+    text-align: center
+    box-sizing: border-box
+    @include font_muli(700,15,#fff)
+    width: 148px
+    height: 40px
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22)
+    border-radius: 3px
+    border: 1px solid #d2021d
+    background: linear-gradient(180deg, #ea053a 0%, #d0021b 100%)
+    &:hover
+      background: linear-gradient(180deg, #d0021b  0%, #87172e 100%)
+    +media(600)
+      background: transparent
+      border: none
+      box-shadow: none
+      color: #4a90e2
+      padding: 11px 0 0 0
+      height: auto
+      &:hover
+        background: transparent
+
+
+
+
+  &__inner
+    background: url("../images/pic/background/review.jpg")center no-repeat
+    background-size: cover
+    padding: 20px 0 12px
+    +media(900)
+      background: url("../images/pic/background/review_mobail.jpg") center no-repeat
+      background-size: cover
+    &-head
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 21px 0 19px
+      +media(600)
+        flex-direction: column
+        justify-content: center
+        padding: 20px 0 12px
+
+
+  &__help
+    @include font_muli(700,7,#fff)
+    padding-right: 15px
+    &:hover
+      text-decoration: underline
+
+  &__sign
+    line-height: 16px
+    @include font_muli(700,7,#fff)
+    background: #626262
+    display: inline-block
+    width: 40px
+    border-radius: 3px
+    box-shadow: 0 1px 1px #626262
+    text-align: center
+    &:hover
+      box-shadow: 3px 1px 1px #626262
+    &:active
+      color: #d2021d
+
+
+  &__title
+    @include font_muli(800,27,#fff)
+    padding-bottom: 8px
+    word-wrap: break-word
+    word-spacing: -5px
+
+  &__sub-title
+    @include font_muli(800,13,#fff)
+
+
+  &__title-box
+    padding-left: 25px
+    +media(600)
+      text-align: center
+      padding: 0 0 8px 0
+
+  &__box
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    width: 100%
+    +media(600)
+      flex-direction: column-reverse
+      align-items: center
+
+  &__top-box
+    width: 100%
+    text-align: right
+    +media(600)
+      text-align: center
+      padding-bottom: 8px
+
+  &__content
+    @include font_muli(400,15,#393939)
+    max-width: 620px
+    padding-top: 21px
+    +media(1023)
+      padding-right: 33px
+    +media(600)
+      padding-top: 10px
+      padding-right: 10px

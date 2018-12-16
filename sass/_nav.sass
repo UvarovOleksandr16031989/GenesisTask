@@ -1,0 +1,55 @@
+.nav
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  max-width: 740px
+  transition: .3s
+  &.visibility
+    top: 0
+    right: 0
+    position: fixed
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    overflow: scroll
+  +media(1023)
+    position: absolute
+    z-index: 100
+    top: -5000px
+    max-width: 100%
+    background-color: #16141a
+    padding: 98px 0 194px 0
+
+  &__link
+    @include font_muli(700,15,#fff)
+    opacity: 0.9
+    &:hover
+      text-decoration: underline
+
+
+
+.burger
+  display: none
+  position: relative
+  z-index: 200
+  overflow: hidden
+  +media(1023)
+    display: block
+
+  &__item
+    width: 18px
+    height: 2px
+    background: #ffffff
+    transition: 0.3s
+    &:nth-child(2)
+      margin: 3px 0
+      &.active
+        transform: translateX(100px)
+    &:first-child
+      &.active
+        transform: translateY(5px) rotate(45deg)
+    &:last-child
+      &.active
+        transform: translateY(-5px) rotate(-45deg)

@@ -1,0 +1,106 @@
+.footer
+  padding: 27px 0 60px
+  background: linear-gradient(rgba(28, 34, 44, 0.8),rgba(28, 34, 44, 0.8)),url('../images/pic/background/footer.png') center no-repeat
+  background-size: cover
+  +media(600)
+    padding-bottom: 3px
+
+
+  &__inner
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-end
+    flex-wrap: wrap
+    +media(1173)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+
+  &__headline
+    @include font_abril(400, 17,#fff)
+    padding-bottom: 10px
+    +media(600)
+      font-size: 15px
+      padding-bottom: 20px
+
+
+  &__input
+    width: 364px
+    height: 40px
+    box-shadow: 0 3px 13px rgba(182, 182, 182, 0.35)
+    border-radius: 3px 0 0 3px
+    border: 1px solid #ffffff
+    opacity: 0.8
+    border-right: none
+    box-sizing: border-box
+    padding-left: 34px
+    @include font_muli(400,15,#fff)
+    +media(600)
+      border-radius: 3px 3px 0 0
+      opacity: 1
+      border-right: 1px solid #fff
+      width: 100%
+
+
+
+  &__btn
+    @include font_muli(700,15,#d0021b)
+    width: 168px
+    height: 40px
+    border-radius: 0 2px 2px 0
+    background-color: rgba( #ffffff ,.8)
+    padding-bottom: 10px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    +media(600)
+      width: 100%
+      border-radius: 0 0 3px 3px
+      background: #fff
+      margin: -1px 0 0 0
+
+
+
+  &__inner-input
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    +media(600)
+      flex-direction: column
+
+
+  &__link
+    @include font_muli(700,17,#fff)
+    opacity: .8
+    letter-spacing: 0.5px
+    &:hover
+      text-decoration: underline
+      cursor: pointer
+    +media(600)
+      padding-bottom: 18px
+
+  &__nav
+    min-width: 507px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 9px
+    +media(1173)
+      padding-top: 30px
+    +media(600)
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      min-width: 0
+      width: 100%
+
+  &__subscribe-box
+    position: relative
+    +media(600)
+      width: 100%

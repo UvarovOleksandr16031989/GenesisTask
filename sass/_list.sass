@@ -1,0 +1,39 @@
+.list
+  padding-top: 33px
+  +media(1023)
+    padding-top: 10px
+
+
+  &__inner
+    background-color: rgba(235, 238, 240, 0.3)
+    padding: 40px 0  15px 80px
+    box-sizing: border-box
+    +media(1023)
+      padding: 0 42px
+      width: 100%
+    +media(600)
+      padding: 0 21px
+
+
+  &__number
+    @include font_muli(700,16, #393245)
+
+
+  &__content
+    @include font_muli(400,18,#393245)
+    padding: 0 0 0 20px
+    transform: translateY(-4px)
+    display: inline-block
+    +media(1023)
+      transform: translateY(0)
+    +media(600)
+      font-size: 15px
+
+
+  &__li
+    line-height: 44px
+    +media(1023)
+      border-bottom: 1px solid #f0f0f4
+      padding-left: 27px
+      &:last-child
+        border: none

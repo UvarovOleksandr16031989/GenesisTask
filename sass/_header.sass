@@ -1,0 +1,25 @@
+.header
+  line-height: 60px
+  box-shadow: 0 1px 3px rgba(14, 48, 72, 0.5)
+  background-color: #16141a
+  vertical-align: middle
+  position: relative
+
+
+  &__logo
+    vertical-align: middle
+    display: inline-block
+    width: 125px
+    height: 36px
+    background: url('../images/sprite/sprites-min.png') -10px -10px
+
+
+  &__inner
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+  &__logo-box
+    +media(1023)
+      width: auto

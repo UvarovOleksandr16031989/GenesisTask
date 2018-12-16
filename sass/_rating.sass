@@ -1,0 +1,92 @@
+.rating
+
+
+  &__headline
+    @include font_muli(800,18,#1c222d)
+
+
+  &__inner
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    padding: 16px 0 20px 0
+    border-bottom: 1px solid #ebeef0
+    &:last-child
+      border: none
+
+
+  &__figure
+    width: 100px
+    height: 60px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    border: 1px solid #ebeef0
+    box-sizing: border-box
+
+
+
+  &__logo
+    display: inline-block
+    &--vl
+      width: 64px
+      height: 40px
+      background: url('../images/sprite/sprites-min.png') -155px -10px
+    &--rt
+      width: 80px
+      height: 22px
+      background: url('../images/sprite/sprites-min.png') -110px -127px
+    &--ch
+      width: 65px
+      height: 41px
+      background: url('../images/sprite/sprites-min.png') -10px -66px
+    &--ls
+      width: 80px
+      height: 28px
+      background: url('../images/sprite/sprites-min.png') -10px -127px
+
+
+  &__title
+    @include font_muli(700,15,#232632)
+    line-height: normal
+
+
+  &__number
+    @include font_muli(700,11)
+    &--grande
+      @include font_grande(700,12)
+
+
+  &__star
+    display: inline-block
+    width: 10px
+    height: 10px
+    background: url('../images/sprite/sprites-min.png') -155px -70px
+    vertical-align: top
+
+
+  &__container
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    padding: 5px 0
+
+
+  &__inner-star
+    padding-left: 6px
+    word-spacing: -2px
+
+
+  &__link
+    @include font_muli(700,12,#4a90e2)
+    line-height: normal
+    &:hover
+      text-decoration: underline
+      cursor: pointer
+
+
+  &__box
+    padding-left: 10px
+

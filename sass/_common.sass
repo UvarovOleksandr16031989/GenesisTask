@@ -1,0 +1,137 @@
+
+=media($width)
+  @media only screen and (max-width: $width+ px)
+    @content
+
+
+@mixin font_muli($weight,$size,$color:#000)
+  color: $color
+  font-weight: $weight
+  font-size: $size+px
+  font-family: 'Muli', sans-serif
+
+@mixin font_abril($weight,$size,$color:#000)
+  color: $color
+  font-weight: $weight
+  font-size: $size+px
+  font-family: 'Abril Fatface', cursive
+
+
+@mixin font_grande($weight,$size,$color:#000)
+  color: $color
+  font-weight: $weight
+  font-size: $size+px
+  font-family: 'lucida_grande_bold'
+
+
+@mixin col($col)
+  width: (100%/12*$col)
+
+.col-1
+  @include col(1)
+
+.col-2
+  @include col(2)
+
+.col-3
+  @include col(3)
+
+.col-4
+  @include col(4)
+
+.col-5
+  @include col(5)
+
+.col-6
+  @include col(6)
+
+.col-7
+  @include col(7)
+
+.col-8
+  @include col(8)
+
+.col-9
+  @include col(9)
+
+.col-10
+  @include col(10)
+
+.col-11
+  @include col(11)
+
+.col-12
+  @include col(12)
+
++media(1023)
+  .col-md-12
+    @include col(12)
+
+
+.container
+  position: relative
+  max-width: 940px
+  margin: 0 auto
+  padding:  0 16px
+  &--footer
+    max-width: 1174px
+  &--review
+    max-width: 528px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    +media(1023)
+      max-width: 491px
+    +media(600)
+      flex-direction: column-reverse
+      align-items: center
+
+
+.inner
+  &__row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-top: 1px
+    +media(1023)
+      justify-content: center
+  &__right
+    min-width: 240px
+    +media(1023)
+      display: none
+  &__left
+    +media(1023)
+      width: 100%
+
+
+
+.clearfix::after
+  content: ''
+  clear: both
+  display: table
+  overflow: hidden
+
+textarea
+  outline: none
+  resize: none
+  &:active, &:focus
+    outline: none
+    resize: none
+
+button
+  outline: none
+  border: none
+  &:active, &:focus
+    outline: none
+    border: none
+
+\:active,:hover,:focus
+  outline: none
+  outline-offset: 0
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+

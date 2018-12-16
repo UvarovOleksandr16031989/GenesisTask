@@ -1,0 +1,113 @@
+.form
+  border-radius: 3px
+  background: #ecf0f2
+  width: 175px
+  min-width: 175px
+  padding: 11px 7px 7px
+  box-shadow: 4px 2px 2px #000
+  text-align: center
+  box-sizing: border-box
+
+  &__figure
+    padding: 0 0 7px 0
+    border-bottom: 1px solid rgba(57, 57, 57, 0.2)
+
+  &__headline
+    @include font_muli(800,9,#393939)
+    line-height: 24px
+
+
+  &__label
+    position: relative
+    display: inline-block
+    width: 100%
+    &:after
+      content: ''
+      width: 0
+      height: 0
+      border-left: 2px solid transparent
+      border-right: 2px solid transparent
+      border-top: 3px solid #000
+      position: absolute
+      display: inline-block
+      right: 3px
+      top: 6px
+      transform: rotate(180deg)
+    &:before
+      content: ''
+      width: 0
+      height: 0
+      border-left: 2px solid transparent
+      border-right: 2px solid transparent
+      border-top: 3px solid #000
+      position: absolute
+      display: inline-block
+      right: 3px
+      top: 10px
+    &--day,
+    &--year
+      width: 25%
+    &--month
+      width: 75px
+
+  &__select
+    width: 100%
+    border-radius: 3px
+    background-color: #f8f8f8
+    padding: 0 0 0 3px
+    border: 1px solid rgba(57, 57, 57, 0.2)
+    @include font_muli(800,7,#393939)
+    height: 18px
+    margin: 0 0 8px 0
+
+
+  &__input
+    width: 100%
+    border-radius: 3px
+    padding: 0 0 0 3px
+    border: 1px solid rgba(57, 57, 57, 0.2)
+    @include font_muli(800,7,#393939)
+    height: 18px
+    margin: 0 0 8px 0
+    background: #fff
+    box-sizing: border-box
+
+
+  &__inner
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+
+  &__agreement-box
+    padding: 0 14px 8px
+
+
+  &__agreement
+    line-height: 8px
+    @include font_muli(800,6,#393939)
+    &--link
+      color: #4a90e2
+      text-decoration: underline
+
+
+  &__btn
+    background: #31ae27
+    border-radius: 5px
+    line-height: 23px
+    vertical-align: middle
+    text-transform: uppercase
+    @include font_muli(700,7,#fff)
+    box-shadow: 0 3px 0px #239519
+    margin: 0 0 11px 0
+    width: 100%
+
+
+  &__content
+    @include font_muli(800,6,#393939)
+
+  &__sing_in
+    border-bottom: 1px dashed #4a90e2
+    @include font_muli(800,6,#4a90e2)

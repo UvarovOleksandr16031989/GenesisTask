@@ -37,5 +37,7 @@ $(document).ready(function() {
 $('.burger,.nav').click(function () {
     $('.burger__item').toggleClass('active');
     $('.nav').toggleClass('visibility');
+    $('.burger').toggleClass('fixed')
+
 });
 
